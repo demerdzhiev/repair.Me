@@ -54,11 +54,19 @@ header nav>* {
 }
 
 footer {
-    padding: 0.5em;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0; 
+    padding: 0; 
 }
 
 nav a {
