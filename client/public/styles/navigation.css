@@ -14,7 +14,7 @@ body {
 
 header,
 footer {
-    background-color: #29303c;
+    background-color: cornflowerblue;
     width: 100%;
     overflow: hidden;
     color: white;
@@ -32,9 +32,13 @@ header {
 
 header h1 {
     display: inline-block;
-    background-color: #29303c;
-    color: white;
     margin-bottom: auto;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Impact', 'Times New Roman', Times, serif !important; 
 }
 
 header nav {
@@ -59,16 +63,18 @@ footer {
 
 nav a {
     margin: 0 0.5em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact', 'Times New Roman', Times, serif; 
 }
 
 nav a:hover {
     cursor: pointer;
-    color: rgb(82, 133, 139);
-    font-weight: bolder;
+    color: orange;
 }
 
 .home:hover {
-    color: rgb(82, 133, 139);
+    color: orange;
 }
 
 #user,
