@@ -10,8 +10,6 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Register from './components/register/Register';
 import ErrorBoundary from './components/ErrorBoundary';
-import RegisterCustomer from './components/register/RegisterCustomer';
-import RegisterProvider from './components/register/RegisterProvider';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -27,8 +25,6 @@ function App() {
               <Routes>
                 <Route path={Path.Home} element={<Home />} />
                 <Route path={Path.Register} element={<Register />} />
-                <Route path={Path.RegisterCustomer} element={<RegisterCustomer />} />
-                <Route path={Path.RegisterProvider} element={<RegisterProvider />} />
               </Routes>
             {/* </Suspense> */}
             <Home />

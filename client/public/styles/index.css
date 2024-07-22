@@ -1,0 +1,102 @@
+body {
+    background-image: url('../images/home_page_image.jpg');
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mascot-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    z-index: 10; 
+}
+
+.auth {
+    width: 100px;
+    margin: 8em auto;
+}
+
+header,
+footer {
+    background-color: cornflowerblue;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.home {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    position: relative;
+    padding: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-bottom: auto;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Impact', 'Times New Roman', Times, serif !important; 
+}
+
+header nav {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+header nav>* {
+    float: left;
+}
+
+footer {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0; 
+    padding: 0; 
+}
+
+nav a {
+    margin: 0 0.5em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact', 'Times New Roman', Times, serif; 
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.home:hover {
+    color: orange;
+}
+
+#user,
+#guest {
+    margin: 0;
+    padding: 0;
+}

@@ -1,22 +1,68 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import AuthContext from "../../contexts/authContext";
+import useForm from "../../hooks/useForm";
 import Path from "../../paths";
+import { Link } from "react-router-dom";
+
+const RegisterFormKeys = {
+  Email: "email",
+  Password: "password",
+  ConfirmPassword: "confirm-password",
+};
 
 export default function Register() {
+  const { registerSubmitHandler } = useContext(AuthContext);
+  const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
+    [RegisterFormKeys.Email]: "",
+    [RegisterFormKeys.Password]: "",
+    [RegisterFormKeys.ConfirmPassword]: "",
+  });
+
   return (
-    <div>
-      <h1>Registration Form</h1>
-      <section className="registration-section">
-        <div className="btn btn-register">
-          <Link to={Path.RegisterCustomer}>register AS CUSTOMER</Link>
+    <section id="register-page" className="content auth">
+      <form id="register" onSubmit={onSubmit}>
+        <div className="container">
+          <div className="brand-logo"></div>
+          <h1>registration FORM</h1>
+
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremailhere@email.com"
+            onChange={onChange}
+            value={values[RegisterFormKeys.Email]}
+          />
+
+          <label htmlFor="pass">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="register-password"
+            onChange={onChange}
+            value={values[RegisterFormKeys.Password]}
+          />
+
+          <label htmlFor="con-pass">Confirm Password:</label>
+          <input
+            type="password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            id="confirm-password"
+            onChange={onChange}
+            value={values[RegisterFormKeys.ConfirmPassword]}
+          />
+
+          <input className="btn submit" type="submit" value="Register" />
         </div>
-        <div className="btn btn-register">
-          <Link to={Path.RegisterProvider}>register AS PROVIDER</Link>
-        </div>
-      </section>
+      </form>
+
       <div className="btn btn-register">
-        <Link to={Path.Home}>go BACK</Link>
+        <Link to={Path.Register }>go BACK</Link>
       </div>
-    </div>
+    </section>
   );
 }
+
