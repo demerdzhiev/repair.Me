@@ -17,7 +17,7 @@ export default function Header() {
                     <div id="user">
                         <Link to="/services/create">Create Service</Link>
                         <Link to="/logout">Logout</Link>
-                        <span>| {username}</span>
+                        <span className='username'>| {username}</span>
                     </div>
                 )}
 

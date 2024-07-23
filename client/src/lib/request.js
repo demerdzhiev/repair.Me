@@ -9,7 +9,6 @@ const buildOptions = (data) => {
     }
 
     const token = localStorage.getItem('accessToken');
-
     if (token) {
         options.headers = {
             ...options.headers,
@@ -21,10 +20,10 @@ const buildOptions = (data) => {
 };
 
 const request = async (method, url, data) => {
-    const response = await fetch(url, {
-        ...buildOptions(data),
-        method,
-    });
+    const options = buildOptions(data);
+    options.method = method;
+
+    const response = await fetch(url, options);
 
     if (response.status === 204) {
         return {};
@@ -34,7 +33,7 @@ const request = async (method, url, data) => {
 
     if (!response.ok) {
         throw result;
-    } 
+    }
 
     return result;
 };

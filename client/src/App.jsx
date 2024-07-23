@@ -9,9 +9,11 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Register from './components/register/Register';
+import Logout from './components/logout/Logout';
 import ErrorBoundary from './components/ErrorBoundary';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/login/Login';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
               <Routes>
                 <Route path={Path.Home} element={<Home />} />
                 <Route path={Path.Register} element={<Register />} />
+                <Route path={Path.Logout} element={<Logout />} />
+                <Route path={Path.Login} element={<Login />} />
               </Routes>
             {/* </Suspense> */}
             <Home />

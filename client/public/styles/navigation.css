@@ -69,6 +69,14 @@ footer p {
     padding: 0; 
 }
 
+nav {
+    margin: 10px;
+}
+
+#user .username {
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+}
+
 nav a {
     margin: 0 0.5em;
     color: white;

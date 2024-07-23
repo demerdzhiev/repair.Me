@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const RegisterFormKeys = {
   Email: "email",
+  Username: "username",
   Password: "password",
   ConfirmPassword: "confirm-password",
 };
@@ -14,6 +15,7 @@ export default function Register() {
   const { registerSubmitHandler } = useContext(AuthContext);
   const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
     [RegisterFormKeys.Email]: "",
+    [RegisterFormKeys.Username]: "",
     [RegisterFormKeys.Password]: "",
     [RegisterFormKeys.ConfirmPassword]: "",
   });
@@ -24,6 +26,16 @@ export default function Register() {
         <div className="container">
           <div className="brand-logo"></div>
           <h1>registration FORM</h1>
+
+          <label htmlFor="username">Username:</label>
+          <input
+            type="username"
+            id="username"
+            name="username"
+            placeholder="Username"
+            onChange={onChange}
+            value={values[RegisterFormKeys.Username]}
+          />
 
           <label htmlFor="email">Email:</label>
           <input
