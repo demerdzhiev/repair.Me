@@ -1,11 +1,18 @@
 {
-    "2d5ae478-87c7-45fa-acf9-f04aa4724421" :
-    {
-        "name": "Полагане на плочки",
+    "2d5ae478-87c7-45fa-acf9-f04aa4724421": {
+        "title": "Полагане на плочки",
         "price": "50 лв/м2",
-        "phone": "0894711811",
+        "phoneNumber": "0894711811",
         "description": "Полагане на плочки от всякакъв вид",
-        "image": "https://qjob.bg/blog/articles/lepene-na-plochki-tsena",
+        "imageUrl": "https://cdncloudcart.com/14473/files/image/kak-sami-da-lepim-plochki.jpg",
         "_id": "2d5ae478-87c7-45fa-acf9-f04aa4724421"
+    },
+    "8449471c-d509-4493-a0cd-77d2c9078af5": {
+        "title": "Полагане на гипсокартон",
+        "price": "25 лв/м2",
+        "phoneNumber": "0894711222",
+        "description": "Полагане на гипсокартон, шпакловка, изработване на фигури.",
+        "imageUrl": "https://markita.net/sites/default/files/produkti/gipsokarton_12.5mm._120200_knauf_vlagoustoychiv.jpg",
+        "_id": "8449471c-d509-4493-a0cd-77d2c9078af5"
     }
 }

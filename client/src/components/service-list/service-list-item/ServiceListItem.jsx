@@ -2,23 +2,22 @@ import { Link } from "react-router-dom";
 
 export default function ServiceListItem({
     _id,
-    name,
+    title,
     price,
-    phone,
-    image,
+    phoneNumber,
+    imageUrl,
     description,
 }) {
     return (
         <div className="allServices">
             <div className="allServices-info">
-                <img src={image} />
-                <h2>{name}</h2>
+                <img src={imageUrl} />
+                <h2>{title}</h2>
                 <h3>{price}</h3>
                 <h3>{description}</h3>
-                <h3>{phone}</h3>
+                <h3>{phoneNumber}</h3>
                 <Link to={`/services/${_id}`} className="details-button">Details</Link>
             </div>
         </div>
     );
 }
-
