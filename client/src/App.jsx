@@ -14,6 +14,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login';
+import ServiceList from './components/service-list/ServiceList';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Route path={Path.Register} element={<Register />} />
                 <Route path={Path.Logout} element={<Logout />} />
                 <Route path={Path.Login} element={<Login />} />
+                <Route path={Path.Services} element={<ServiceList />} />
               </Routes>
             {/* </Suspense> */}
             <Home />
