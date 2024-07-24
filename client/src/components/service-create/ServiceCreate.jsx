@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import * as serviceService from '../../services/serviceService';
+import * as serviceService from '../../api/serviceApi';
 
 export default function ServiceCreate() {
     const navigate = useNavigate();
