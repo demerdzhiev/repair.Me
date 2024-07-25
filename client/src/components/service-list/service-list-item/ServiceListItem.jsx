@@ -11,7 +11,7 @@ export default function ServiceListItem({
     return (
         <div className="allServices">
             <div className="allServices-info">
-                <img src={imageUrl} />
+                <img src={imageUrl} alt={title} />
                 <h2>{title}</h2>
                 <h3>{price}</h3>
                 <h3>{description}</h3>
