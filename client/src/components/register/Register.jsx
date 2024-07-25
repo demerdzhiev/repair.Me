@@ -71,8 +71,8 @@ export default function Register() {
         </div>
       </form>
 
-      <div className="btn btn-register">
-        <Link to={Path.Register }>go BACK</Link>
+      <div>
+        <Link to={Path.Home }>go BACK</Link>
       </div>
     </section>
   );
