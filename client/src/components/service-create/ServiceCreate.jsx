@@ -13,7 +13,7 @@ export default function ServiceCreate() {
         try {
             await serviceService.create(serviceData);
 
-            navigate('/service');
+            navigate('/services');
         } catch (err) {
             // Error notification
             console.log(err);

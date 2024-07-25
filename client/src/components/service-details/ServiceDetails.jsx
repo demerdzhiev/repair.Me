@@ -47,7 +47,7 @@ export default function ServiceDetails() {
         const hasConfirmed = confirm(`Are you sure you want to delete ${service.title}`);
 
         if (hasConfirmed) {
-            await commentApi.remove(serviceId);
+            await serviceApi.remove(serviceId);
 
             navigate(Path.Services);
         }
