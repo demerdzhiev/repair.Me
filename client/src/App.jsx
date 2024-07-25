@@ -16,6 +16,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import ServiceList from './components/service-list/ServiceList';
 import ServiceCreate from './components/service-create/ServiceCreate';
+import ServiceDetails from './components/service-details/ServiceDetails';
+import ServiceEdit from './components/service-edit/ServiceEdit';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
                 <Route path={Path.Login} element={<Login />} />
                 <Route path={Path.Services} element={<ServiceList />} />
                 <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
+                <Route path={Path.ServiceDetails} element={<ServiceDetails />} />
+                <Route path={Path.ServiceEdit} element={<ServiceEdit />} />
               </Routes>
             {/* </Suspense> */}
             <Home />

@@ -5,9 +5,9 @@ const Path = {
     Login: '/login',
     Services: '/services',
     ServicesCreate: '/services/create',
-    // GameEdit: '/games/:gameId/edit',
+    ServiceEdit: '/services/:serviceId/edit',
     // GameDelete: '/games/:gameId/delete',
-    // GameDetails: '/games/:gameId',
+    ServiceDetails: '/services/:serviceId',
 };
 
 export default Path;
