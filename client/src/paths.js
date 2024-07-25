@@ -6,7 +6,7 @@ const Path = {
     Services: '/services',
     ServicesCreate: '/services/create',
     ServiceEdit: '/services/:serviceId/edit',
-    // GameDelete: '/games/:gameId/delete',
+    // ServiceDelete: '/services/:serviceId/delete',
     ServiceDetails: '/services/:serviceId',
 };
 

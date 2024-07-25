@@ -11,7 +11,7 @@ import Path from "../../paths";
 
 export default function ServiceDetails() {
     const navigate = useNavigate();
-    const { email, userId } = useContext(authContext);
+    const { username, userId } = useContext(authContext);
     const [service, setService] = useState({});
     const [comments, dispatch] = useReducer(reducer, []);
     const { serviceId } = useParams();
@@ -30,12 +30,12 @@ export default function ServiceDetails() {
     }, [serviceId]);
 
     const addCommentHandler = async (values) => {
-        const newComment = await commentService.create(
+        const newComment = await commentApi.create(
             serviceId,
             values.comment
         );
 
-        newComment.owner = { email };
+        newComment.owner = { username };
 
         dispatch({
             type: 'ADD_COMMENT',
@@ -47,7 +47,7 @@ export default function ServiceDetails() {
         const hasConfirmed = confirm(`Are you sure you want to delete ${service.title}`);
 
         if (hasConfirmed) {
-            await serviceApi.remove(serviceId);
+            await commentApi.remove(serviceId);
 
             navigate(Path.Services);
         }
@@ -74,7 +74,7 @@ export default function ServiceDetails() {
                     <ul>
                         {comments.map(({ _id, text, owner: { email } }) => (
                             <li key={_id} className="comment">
-                                <p>{email}: {text}</p>
+                                <p>{username}: {text}</p>
                             </li>
                         ))}
                     </ul>

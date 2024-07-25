@@ -47,7 +47,7 @@ export default function ServiceEdit() {
         <section id="create-page" className="auth">
             <form id="create" onSubmit={editServiceSubmitHandler}>
                 <div className="container">
-                    <h1>Create Service</h1>
+                    <h1>Edit Service</h1>
                     <label htmlFor="leg-title">Service title:</label>
                     <input type="text" id="title" name="title" value={service.title} onChange={onChange} placeholder="Enter service title..." />
 
