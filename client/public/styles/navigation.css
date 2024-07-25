@@ -7,25 +7,12 @@ body {
     background-size: cover;
 }
 
-.auth {
-    width: 100px;
-    margin: 8em auto;
-}
-
 header,
 footer {
     background-color: cornflowerblue;
     width: 100%;
     overflow: hidden;
     color: white;
-}
-
-.home {
-    font-size: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header {
     position: relative;
     padding: 10px;
 }

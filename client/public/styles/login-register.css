@@ -96,3 +96,8 @@ label[for="terms"]>input {
     color: orange;
     background-color: cornflowerblue;
 }
+
+.auth {
+    width: 100px;
+    margin: 8em auto;
+}
