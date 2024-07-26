@@ -1339,6 +1339,20 @@ users
     	}
     };
     var seedData = {
+        services :{
+        "2aec2a11-f319-4df2-9845-31dd5c6648cf": {
+
+            "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+            "title": "Обща работа",
+            "price": "200 лв/час",
+            "phoneNumber": "+359898888888",
+            "imageUrl": "https://konteineri.greenathome.bg/wp-content/uploads/SKIP-S-LOGO-770x430.png",
+            "description": "Къртене, почистване, извозване на строителни отпадъци.",
+            "_createdOn": 1722025532819,
+            "_id": "2aec2a11-f319-4df2-9845-31dd5c6648cf"
+
+            }
+        },
     	recipes: {
     		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
