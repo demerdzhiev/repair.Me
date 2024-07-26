@@ -1,0 +1,63 @@
+.catalogue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh; 
+    background: none; 
+}
+
+.allServices-info {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 2px solid #007bff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    text-align: center;
+}
+
+.allServices-info img {
+    border-radius: 10px 10px 0 0; 
+    width: 100%; 
+}
+
+.allServices-info .card-body,
+.allServices-info .list-group,
+.allServices-info .list-group-item {
+    background-color: transparent; 
+    color: black;
+}
+
+.allServices-info .list-group-item {
+    border: none; 
+    padding: 5px 0; 
+}
+
+.allServices-info .card-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.allServices-info .card-link:hover {
+    text-decoration: underline;
+    background-color: #0056b3; /* Darker shade on hover */
+    text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+.allServices-info .card-link {
+    display: inline-block; /* Ensure it behaves like a button */
+    margin-top: 10px;
+    padding: 10px 20px; /* Padding for the button look */
+    background-color: #007bff; /* Background color for the button */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#catalog-page {
+    display: flex;
+    justify-content: space-evenly;
+}

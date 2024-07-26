@@ -1,9 +1,4 @@
-/* @import "typography.css";
-@import "details.css";
-@import "create-edit.css";
-@import "welcome.css";
-@import "all-games.css"; */
 @import "navigation.css";
 @import "home.css";
 @import "login-register.css";
-/* @import "comments.css"; */
+@import "service-list-item.css";
