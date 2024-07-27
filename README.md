@@ -1,8 +1,12 @@
 # repair.Me
-SoftUni React exam project. This repository is for educational purposes only
+## SoftUni React exam project. This repository is for educational purposes only!
 
 > What’s This About?
-"repair ME" is a directory for home renovation services. You can browse through different services, check out their details, and manage them if you're a service provider. It’s designed to be user-friendly for both clients looking for renovation help and providers offering their services.
+> ```
+> * "repair ME" is a directory for home renovation services. You can browse through different services, check out their details, and manage
+> * them if you're a service provider. It’s designed to be user-friendly for both clients looking for renovation help and providers 
+> * offering their services.
+```
 
 > The application allows you to:
 > ```
