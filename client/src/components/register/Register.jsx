@@ -71,8 +71,10 @@ export default function Register() {
         </div>
       </form>
 
-      <div>
-        <Link to={Path.Home }>go BACK</Link>
+      <div className="back-link-container">
+      <Link to={Path.Home}>
+          <img src="../../images/home_icon.png" alt="Go Back" className="home-icon" />
+        </Link>
       </div>
     </section>
   );

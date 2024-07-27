@@ -4,6 +4,7 @@ import AuthContext from "../../contexts/authContext";
 import Path from "../../paths";
 import { Link } from "react-router-dom";
 
+
 const LoginFormKeys = {
   Email: "email",
   Password: "password",
@@ -21,8 +22,8 @@ export default function Login() {
       <form id="login" onSubmit={onSubmit}>
         <div className="container">
           <div className="brand-logo"></div>
-          <h1>Login</h1>
-          <label htmlFor="email">Email:</label>
+          <h1>login FORM</h1>
+          <label htmlFor="email">email:</label>
           <input
             type="email"
             id="email"
@@ -32,7 +33,7 @@ export default function Login() {
             value={values[LoginFormKeys.Email]}
           />
 
-          <label htmlFor="login-pass">Password:</label>
+          <label htmlFor="login-pass">password:</label>
           <input
             type="password"
             id="login-password"
@@ -45,8 +46,10 @@ export default function Login() {
         </div>
       </form>
 
-      <div>
-        <Link to={Path.Home }>go BACK</Link>
+      <div className="back-link-container">
+      <Link to={Path.Home}>
+          <img src="../../images/home_icon.png" alt="Go Back" className="home-icon" />
+        </Link>
       </div>
     </section>
   );

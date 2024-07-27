@@ -9,7 +9,7 @@ export default function ServiceEdit() {
     const [service, setService] = useState({
         title: '',
         price: '',
-        phone: '',
+        phoneNumber: '',
         imageUrl: '',
         description: '',
     });
@@ -48,19 +48,19 @@ export default function ServiceEdit() {
             <form id="create" onSubmit={editServiceSubmitHandler}>
                 <div className="container">
                     <h1>Edit Service</h1>
-                    <label htmlFor="leg-title">Service title:</label>
+                    <label htmlFor="leg-title">title:</label>
                     <input type="text" id="title" name="title" value={service.title} onChange={onChange} placeholder="Enter service title..." />
 
-                    <label htmlFor="price">Price:</label>
+                    <label htmlFor="price">price:</label>
                     <input type="text" id="price" name="price" value={service.price} onChange={onChange} placeholder="Enter service category..." />
 
-                    <label htmlFor="phone">Phone number:</label>
-                    <input type="text" id="phone" name="phone" value={service.phone} onChange={onChange} placeholder="Enter phone number" />
+                    <label htmlFor="phone">phone NUMBER:</label>
+                    <input type="text" id="phone" name="phone" value={service.phoneNumber} onChange={onChange} placeholder="Enter phone number" />
 
-                    <label htmlFor="service-img">Image:</label>
+                    <label htmlFor="service-img">image URL:</label>
                     <input type="text" id="imageUrl" name="imageUrl" value={service.imageUrl} onChange={onChange} placeholder="Upload a photo..." />
 
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description">description:</label>
                     <textarea name="description" value={service.description} onChange={onChange} id="description"></textarea>
                     <input className="btn submit" type="submit" value="Edit Service" />
                 </div>

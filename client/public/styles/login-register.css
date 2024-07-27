@@ -1,29 +1,24 @@
-#login-page {
-    position: absolute;
-    width: 30%;
-    height: 40%;
-    border-radius: 20px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #3e4443;
-    box-shadow: 0px 0px 32px 0px #49535e, -14px -14px 20px #191c21;
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+#login-page,
 #register-page {
-    position: relative;
     width: 30%;
-    height: 40;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background: orange;
+    background:  cornflowerblue;
 }
 
 .container {
     padding: 20px;
 }
 
-.container>h1 {
+.container > h1 {
     font-weight: 400;
     font-size: 2.7rem;
     text-align: center;
@@ -40,52 +35,41 @@ input {
     border: none;
     outline: none;
     box-sizing: border-box;
+    
 }
 
 label {
     margin-bottom: 4px;
-    font-size: 17px;
+    font-size: 25px;
     color: white;
-    margin-top: 4px;
     font-family: 'Impact', 'Times New Roman', Times, serif;
-}
-
-label:nth-of-type(2) {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 input::placeholder {
-    color: rgba(184, 179, 179, 0.678);
-};
-
-
-label[for="female"] {
-    margin-top: 10px;
+    color: lightgray;
 }
 
-input[type="nickname"],
+input[type="username"],
 input[type="password"],
 input[type="number"],
 input[type="email"] {
     background: #ecf0f3;
-    padding: 20px;
+    padding: 15px;
     padding-left: 20px;
-    height: 20px;
+    height: 25px;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 18px;
     border-radius: 20px;
 }
 
-label[for="terms"]>input {
-    display: inline;
-}
-
 .btn.submit {
-    margin-top: 10px;
+    margin-top: 25px;
     background-color: cornflowerblue;
     height: 40px;
     border-radius: 20px;
     color: white;
+    background-color: orange;
     font-size: 20px;
     cursor: pointer;
     font-weight: 400;
@@ -94,10 +78,30 @@ label[for="terms"]>input {
 
 .btn.submit:hover {
     color: orange;
-    background-color: cornflowerblue;
+    background-color: white;
 }
 
 .auth {
     width: 100px;
     margin: 8em auto;
 }
+
+.back-link-container {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .back-link-container a {
+    display: inline-block;
+  }
+  
+  .home-icon {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .home-icon:hover {
+    transform: scale(1.5); 
+  }

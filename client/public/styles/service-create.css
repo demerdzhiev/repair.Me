@@ -1,0 +1,85 @@
+#create-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; 
+    width: 60%;
+}
+
+#create {
+    position: relative;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 40px;
+    background: cornflowerblue;
+    box-sizing: border-box;
+}
+
+#create h1 {
+    font-weight: 400;
+    font-size: 2.7rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 4px;
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+}
+
+/* Adjust input and textarea fields */
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    background: #ecf0f3;
+}
+
+textarea {
+    background: #ecf0f3;
+    height: 100px;
+    resize: vertical; 
+}
+
+/* Styling the submit button */
+.btn.submit {
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn.submit:hover {
+    color: orange;
+    background-color: white;
+}
+
+/* Add some spacing and alignment for the container */
+.container {
+    padding: 20px;
+}

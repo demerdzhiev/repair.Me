@@ -24,20 +24,20 @@ export default function ServiceCreate() {
         <section id="create-page" className="auth">
             <form id="create" onSubmit={createServiceSubmitHandler}>
                 <div className="container">
-                    <h1>Create Service</h1>
-                    <label htmlFor="leg-title">Title:</label>
+                    <h1>create SERVICE</h1>
+                    <label htmlFor="leg-title">title:</label>
                     <input type="text" id="title" name="title" placeholder="Enter service title..." />
 
-                    <label htmlFor="price">Price:</label>
+                    <label htmlFor="price">price:</label>
                     <input type="text" id="price" name="price" placeholder="Enter service price..." />
 
-                    <label htmlFor="phone-number">MaxLevel:</label>
+                    <label htmlFor="phone-number">phone NUMBER:</label>
                     <input type="text" id="phone-number" name="phoneNumber" placeholder="+359..." />
 
-                    <label htmlFor="service-img">Image:</label>
+                    <label htmlFor="service-img">image URL:</label>
                     <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />
 
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description">description:</label>
                     <textarea name="description" id="description"></textarea>
                     <input className="btn submit" type="submit" value="Create Service" />
                 </div>

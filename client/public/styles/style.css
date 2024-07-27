@@ -1,4 +1,9 @@
-@import "navigation.css";
+@import "header-footer.css";
 @import "home.css";
 @import "login-register.css";
 @import "service-list-item.css";
+@import "service-list.css";
+@import "index.css";
+@import "footer.css";
+@import "service-details.css";
+@import "service-create.css";

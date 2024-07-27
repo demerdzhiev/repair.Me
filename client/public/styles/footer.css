@@ -1,0 +1,25 @@
+footer {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.mascot-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: auto; 
+    z-index: 101; 
+}

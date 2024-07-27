@@ -1,20 +1,12 @@
-body {
-    background-image: url('../images/home_page_image.jpg');
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-header,
-footer {
+header {
     background-color: cornflowerblue;
     width: 100%;
     overflow: hidden;
     color: white;
-    position: relative;
+    position: fixed;
     padding: 10px;
+    z-index: 1000;
+    top: 0;
 }
 
 header h1 {

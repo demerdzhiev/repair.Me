@@ -1,9 +1,11 @@
 .catalogue {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh; 
-    background: none; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    justify-items: center; 
+    width: 60%; 
+    padding-bottom: 50px;
 }
 
 .allServices-info {
@@ -12,8 +14,9 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; 
-    text-align: center;
+    text-align: center; 
+    width: 100%; 
+    max-width: 300px; 
 }
 
 .allServices-info img {
@@ -24,8 +27,8 @@
 .allServices-info .card-body,
 .allServices-info .list-group,
 .allServices-info .list-group-item {
-    background-color: transparent; 
-    color: black;
+    background-color: transparent;
+    color: black; 
 }
 
 .allServices-info .list-group-item {
@@ -34,30 +37,18 @@
 }
 
 .allServices-info .card-link {
-    display: block;
+    display: inline-block; 
     margin-top: 10px;
-    color: #007bff;
+    padding: 10px 20px; 
+    background-color:  cornflowerblue;
+    color: white; 
     text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
 }
 
 .allServices-info .card-link:hover {
-    text-decoration: underline;
-    background-color: #0056b3; /* Darker shade on hover */
-    text-decoration: none; /* Ensure underline doesn't appear on hover */
-}
-
-.allServices-info .card-link {
-    display: inline-block; /* Ensure it behaves like a button */
-    margin-top: 10px;
-    padding: 10px 20px; /* Padding for the button look */
-    background-color: #007bff; /* Background color for the button */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-#catalog-page {
-    display: flex;
-    justify-content: space-evenly;
+    background-color: cornflowerblue; 
+    color: orange; 
+    text-decoration: none; 
 }

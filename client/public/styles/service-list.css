@@ -1,0 +1,15 @@
+#catalog-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: center; 
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+}
+
+#catalog-page h1 {
+    margin-bottom: 20px;
+    color:  cornflowerblue; 
+    font-size: 60px;
+}
