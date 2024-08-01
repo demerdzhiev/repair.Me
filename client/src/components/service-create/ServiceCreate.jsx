@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-
-import * as serviceService from '../../api/serviceApi';
+import * as serviceApi from '../../api/serviceApi';
 
 export default function ServiceCreate() {
     const navigate = useNavigate();
@@ -11,7 +10,7 @@ export default function ServiceCreate() {
         const serviceData = Object.fromEntries(new FormData(e.currentTarget));
 
         try {
-            await serviceService.create(serviceData);
+            await serviceApi.create(serviceData);
 
             navigate('/services');
         } catch (err) {

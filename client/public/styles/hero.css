@@ -1,0 +1,106 @@
+#hero-page {
+    width: 100%;
+    padding: 7em 15px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: center; 
+    font-family: 'Impact', 'Times New Roman', Times, serif;
+}
+
+#hero-page .welcome-message {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    width: 30%;
+}
+
+.welcome-message h2 {
+    color:cornflowerblue;
+    font-size: 55px;
+    font-weight: 500;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+}
+
+#home-page {
+    text-align: center; 
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 0px;
+    border-radius: 10px;
+    padding: 55px;
+    margin: 55px;
+    height: auto;
+    width: 60%;
+    overflow: hidden ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    justify-items: center; 
+    width: 60%; 
+    padding-bottom: 50px;
+}
+
+.service {
+    border: 2px solid #007bff; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; 
+    width: 80%; 
+    max-width: 300px;
+}
+
+.image-wrap > img {
+    border-radius: 30px; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.service>h3 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px;
+}
+
+.service-content>h4 {
+    color: #c2d4f8;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.data-buttons {
+    display: inline-block; 
+    margin-top: 10px;
+    padding: 10px 20px; 
+    background-color:  cornflowerblue;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.data-buttons:hover {
+    background-color: cornflowerblue; 
+    color: orange; 
+    text-decoration: none; 
+}
+
+#home-page > h1 {
+    color: orange;
+    text-align: center;
+    font-weight: 500;
+    font-size: 54px;
+}
+
+.no-articles {
+    color: orange;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+}

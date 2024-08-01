@@ -17,10 +17,17 @@ export const getOne = async (serviceId) => {
 };
 
 export const getLatest = async () => {
-    const result = await request.get(baseUrl);
+    const urlSearchParams = new URLSearchParams({
+        sortBy: '_createdOn desc',
+        pageSize: 3,
+    });
+
+    const result = await request.get(`${baseUrl}?${urlSearchParams.toString()}`);
+
+    const latestServices = Object.values(result)
     
-    return result.reverse().slice(0, 3);
-}
+    return latestServices;
+};
 
 export const create = async (serviceData) => {
     const result = await request.post(baseUrl, serviceData);

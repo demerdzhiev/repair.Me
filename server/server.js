@@ -540,10 +540,17 @@
                 for (let i = props.length - 1; i >= 0; i--) {
                     let { prop, desc } = props[i];
                     responseData.sort(({ [prop]: propA }, { [prop]: propB }) => {
-                        if (typeof propA == 'number' && typeof propB == 'number') {
+                        if (propA === undefined || propB === undefined) {
+                            console.error(`Property ${prop} does not exist in some items.`);
+                            return 0; // Or some default value
+                        }
+                        if (typeof propA === 'number' && typeof propB === 'number') {
                             return (propA - propB) * (desc ? -1 : 1);
-                        } else {
+                        } else if (typeof propA === 'string' && typeof propB === 'string') {
                             return propA.localeCompare(propB) * (desc ? -1 : 1);
+                        } else {
+                            console.error(`Unsupported data types for property ${prop}.`);
+                            return 0; // Or some default value
                         }
                     });
                 }

@@ -1,4 +1,3 @@
-// import { lazy, Suspense } from "react";
 import React from 'react';
 
 import { AuthProvider } from "./contexts/authContext";
@@ -28,7 +27,6 @@ function App() {
         <AuthProvider>
           <div id="box">
             <Header />
-            {/* <Suspense fallback={<h1>Loading...</h1>}> */}
               <Routes>
                 <Route path={Path.Home} element={<Home />} />
                 <Route path={Path.Register} element={<Register />} />
@@ -42,8 +40,6 @@ function App() {
 
                 </Route>
               </Routes>
-            {/* </Suspense> */}
-            <Home />
             <Footer />
           </div>
         </AuthProvider>
