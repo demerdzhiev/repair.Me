@@ -18,6 +18,7 @@ import ServiceList from './components/service-list/ServiceList';
 import ServiceCreate from './components/service-create/ServiceCreate';
 import ServiceDetails from './components/service-details/ServiceDetails';
 import ServiceEdit from './components/service-edit/ServiceEdit';
+import AuthGuard from './components/common/AuthGuard';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
                 <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
                 <Route path={Path.ServiceDetails} element={<ServiceDetails />} />
                 <Route path={Path.ServiceEdit} element={<ServiceEdit />} />
+                <Route element={<AuthGuard />}>
+
+                </Route>
               </Routes>
             {/* </Suspense> */}
             <Home />
