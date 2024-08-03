@@ -52,6 +52,14 @@
     text-align: center; 
     width: 80%; 
     max-width: 300px;
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    box-sizing: border-box; 
+}
+
+.image-wrap {
+    flex: 1; 
 }
 
 .image-wrap > img {
@@ -60,11 +68,16 @@
     overflow: hidden;
 }
 
-.service>h3 {
+.service-data {
+    margin-top: auto; 
+    margin-bottom: 5px; 
+}
+
+.service-data h3 {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0 5px; 
 }
 
 .service-content>h4 {
@@ -76,13 +89,13 @@
 
 .data-buttons {
     display: inline-block; 
-    margin-top: 10px;
     padding: 10px 20px; 
-    background-color:  cornflowerblue;
+    background-color: cornflowerblue;
     color: white; 
     text-decoration: none;
     border-radius: 5px; 
     transition: background-color 0.3s ease; 
+    margin-top: 10px;
 }
 
 .data-buttons:hover {

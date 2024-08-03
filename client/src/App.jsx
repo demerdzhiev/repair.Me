@@ -33,10 +33,10 @@ function App() {
                 <Route path={Path.Logout} element={<Logout />} />
                 <Route path={Path.Login} element={<Login />} />
                 <Route path={Path.Services} element={<ServiceList />} />
-                <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
                 <Route path={Path.ServiceDetails} element={<ServiceDetails />} />
                 <Route path={Path.ServiceEdit} element={<ServiceEdit />} />
                 <Route element={<AuthGuard />}>
+                <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
 
                 </Route>
               </Routes>
