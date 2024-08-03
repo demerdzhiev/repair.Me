@@ -17,15 +17,17 @@ export const getOne = async (serviceId) => {
 };
 
 export const getLatest = async () => {
-    const urlSearchParams = new URLSearchParams({
-        sortBy: '_createdOn desc',
-        pageSize: 3,
-    });
+    // const query = new URLSearchParams({
+    //     sortBy: '_createdOn desc',
+    //     pageSize: 3,
+    // });
+    // const result = await request.get(`${baseUrl}?${query.toString()}`);
+    // const latestServices = Object.values(result)
 
-    const result = await request.get(`${baseUrl}?${urlSearchParams.toString()}`);
+    const query = `sortBy=_createdOn%20desc&pageSize=3`;
+    const result = await request.get(`${baseUrl}?${query}`);
+    const latestServices = Object.values(result);
 
-    const latestServices = Object.values(result)
-    
     return latestServices;
 };
 
