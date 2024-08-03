@@ -1,4 +1,4 @@
-/* General styling for the service details section */
+
 #service-details {
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
 }
 
-/* Styling for the service header */
+
 .service-header {
     text-align: center;
     margin-bottom: 20px;
@@ -51,19 +51,18 @@
     color: #007bff;
 }
 
-/* Styling for the description text */
+
 .text {
     margin-bottom: 20px;
     font-size: 1rem;
     color: #555;
 }
 
-/* Styling for the comments section */
 .details-comments {
     margin-bottom: 20px;
-    max-height: 300px; /* Adjust the height as needed */
-    overflow-y: auto; /* Adds a vertical scrollbar when content exceeds max-height */
-    padding-right: 15px; /* Ensure padding for scrollbar */
+    max-height: 300px; 
+    overflow-y: auto; 
+    padding-right: 15px; 
 }
 
 .details-comments h2 {
@@ -88,7 +87,6 @@
     font-style: italic;
 }
 
-/* Styling for buttons */
 .buttons {
     display: flex;
     justify-content: center;
@@ -109,16 +107,18 @@
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: orange;
+    color: #0056b3;
 }
 
-/* Styling for the comment form */
 .create-comment {
     margin-top: 20px;
     padding: 20px;
-    background: #f9f9f9;
+    background: #ffef03;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 40%;
 }
 
 .create-comment label {
@@ -140,7 +140,7 @@
 }
 
 .create-comment .btn.submit {
-    background-color: #007bff;
+    background-color:cornflowerblue;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -151,5 +151,6 @@
 }
 
 .create-comment .btn.submit:hover {
-    background-color: #0056b3;
+    background-color:orange;
+    color:cornflowerblue;
 }
