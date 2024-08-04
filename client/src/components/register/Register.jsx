@@ -8,7 +8,7 @@ const RegisterFormKeys = {
   Email: "email",
   Username: "username",
   Password: "password",
-  ConfirmPassword: "confirm-password",
+  ConfirmPassword: "confirmPassword",
 };
 
 export default function Register() {
@@ -60,7 +60,7 @@ export default function Register() {
           <label htmlFor="con-pass">Confirm Password:</label>
           <input
             type="password"
-            name="confirm-password"
+            name="confirmPassword"
             placeholder="Confirm Password"
             id="confirm-password"
             onChange={onChange}
@@ -72,11 +72,10 @@ export default function Register() {
       </form>
 
       <div className="back-link-container">
-      <Link to={Path.Home}>
+        <Link to={Path.Home}>
           <img src="../../images/home_icon.png" alt="Go Back" className="home-icon" />
         </Link>
       </div>
     </section>
   );
 }
-

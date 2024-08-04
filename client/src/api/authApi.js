@@ -12,12 +12,15 @@ export const login = async (username, email, password) => {
     return result;
 };
 
-export const register = async (username, email, password) => {
-    // Create a new request without including the token
+export const register = async (username, email, password, confirmPassword) => {
+    if (password !== confirmPassword) {
+        throw new Error("Password was not confirmed. Please, try again!");
+    }
+
     const options = {
         method: 'POST',
         headers: {
-            'content-type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             username,
@@ -25,10 +28,12 @@ export const register = async (username, email, password) => {
             password
         })
     };
+
     const response = await fetch(`${baseUrl}/register`, options);
 
     if (!response.ok) {
-        throw new Error('Failed to register');
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to register');
     }
 
     const result = await response.json();
