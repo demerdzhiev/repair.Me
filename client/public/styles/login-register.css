@@ -100,6 +100,9 @@ input[type="email"] {
     height: 30px; 
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .home-icon:hover {

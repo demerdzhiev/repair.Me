@@ -28,10 +28,8 @@ export default function ServiceEdit() {
 
         try {
             await serviceApi.edit(serviceId, values);
-
             navigate('/services');
         } catch (err) {
-            // Error notification
             console.log(err);
         }
     }
