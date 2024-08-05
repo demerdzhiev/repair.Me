@@ -15,8 +15,9 @@ export default function Header() {
                 <Link to="/services">all SERVICES</Link>
                 {isAuthenticated && (
                     <div id="user">
-                        <Link to="/services/create">Create Service</Link>
-                        <Link to="/logout">Logout</Link>
+                        <Link to="my-services"> my SERVICES</Link>
+                        <Link to="/services/create">create SERVICE</Link>
+                        <Link to="/logout">logout</Link>
                         <span className='username'>| {username}</span>
                     </div>
                 )}

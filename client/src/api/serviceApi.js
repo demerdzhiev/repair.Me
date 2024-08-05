@@ -10,6 +10,13 @@ export const getAll = async () => {
     return services;
 };
 
+export const getAllByOwner = async (ownerId) => {
+    const query = `where=_ownerId%3D%22${encodeURIComponent(ownerId)}%22`;
+    const result = await request.get(`${baseUrl}?${query}`);
+    const servicesByOwnerId = Object.values(result);
+    return servicesByOwnerId;
+  };
+
 export const getOne = async (serviceId) => {
     const result = await request.get(`${baseUrl}/${serviceId}`, );
 
@@ -24,7 +31,7 @@ export const getLatest = async () => {
     // const result = await request.get(`${baseUrl}?${query.toString()}`);
     // const latestServices = Object.values(result)
 
-    const query = `sortBy=_createdOn%20desc&pageSize=3`;
+    const query = 'sortBy=_createdOn%20desc&pageSize=3';
     const result = await request.get(`${baseUrl}?${query}`);
     const latestServices = Object.values(result);
 

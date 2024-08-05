@@ -19,6 +19,8 @@ import ServiceDetails from './components/service-details/ServiceDetails';
 import ServiceEdit from './components/service-edit/ServiceEdit';
 import AuthGuard from './components/common/AuthGuard';
 import NotFound from './components/common/NotFound';
+import ServicesByUser from './components/service-user/ServicesByUser';
+
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
                 <Route path={Path.ServiceDetails} element={<ServiceDetails />} />
                 <Route path={Path.ServiceEdit} element={<ServiceEdit />} />
                 <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
+                <Route path={Path.ServicesCreate} element={<ServiceCreate />} />
+                <Route path={Path.MyServices} element={<ServicesByUser />} />
                 </Route>
                 <Route path="*" element={<NotFound />} /> 
               </Routes>
