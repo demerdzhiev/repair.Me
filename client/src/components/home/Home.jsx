@@ -16,6 +16,7 @@ export default function Home() {
     <section id="hero-page">
       <div className="welcome-message">
         <h2>welcome to repair ME</h2>
+        <h3>everything you need to renovate your HOME</h3>
       </div>
 
       {!latestServices.length ? (
