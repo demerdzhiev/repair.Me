@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer className="footer">
           <p>
-            &copy; {new Date().getFullYear()} repair.Me. All rights reserved.
+            &copy; {new Date().getFullYear()} repair.Me | All rights reserved 
           </p>
       </footer>
     </>

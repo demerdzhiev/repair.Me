@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import Path from "../../../paths";
 import { pathToUrl } from "../../../utils/pathUtils";
 
@@ -13,8 +14,7 @@ export default function LatestService({ _id, imageUrl, title }) {
         <div className="data-buttons">
           <Link
             to={pathToUrl(Path.ServiceDetails, { serviceId: _id })}
-            className="btn details-btn"
-          >
+            className="btn details-btn">
             Details
           </Link>
         </div>

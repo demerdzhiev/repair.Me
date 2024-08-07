@@ -1,17 +1,15 @@
 import React from 'react';
-
-import { AuthProvider } from "./contexts/authContext";
-import Path from "./paths";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import Path from "./paths";
+import { AuthProvider } from "./contexts/authContext";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
 import ErrorBoundary from './components/ErrorBoundary';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import ServiceList from './components/service-list/ServiceList';
 import ServiceCreate from './components/service-create/ServiceCreate';

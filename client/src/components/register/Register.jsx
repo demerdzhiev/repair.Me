@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
 import Path from "../../paths";
-import { Link } from "react-router-dom";
 
 const RegisterFormKeys = {
   Email: "email",

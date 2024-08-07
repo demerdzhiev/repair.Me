@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import * as serviceService from '../../services/serviceService';
-import { useEffect, useState } from 'react';
 
 export default function ServiceEdit() {
     const navigate = useNavigate();

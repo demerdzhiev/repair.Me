@@ -1,11 +1,12 @@
 import { createContext } from "react";
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
+import Path from '../paths';
 import * as authService from '../services/authService';
 import usePersistedState from "../hooks/usePersistedState";
-import Path from '../paths';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AuthContext = createContext();
 
