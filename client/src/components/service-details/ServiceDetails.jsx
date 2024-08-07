@@ -12,8 +12,8 @@ import Path from "../../paths";
 export default function ServiceDetails() {
   const navigate = useNavigate();
   const { username, userId } = useContext(authContext);
-  const [service, setService] = useState({});
-  const [comments, dispatch] = useReducer(reducer, []);
+  const [ service, setService ] = useState({});
+  const [ comments, dispatch ] = useReducer(reducer, []);
   const { serviceId } = useParams();
 
   useEffect(() => {
@@ -36,6 +36,8 @@ export default function ServiceDetails() {
       type: "ADD_COMMENT",
       payload: newComment,
     });
+
+    values.comment = '';
   };
 
   const deleteButtonClickHandler = async () => {
