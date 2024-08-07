@@ -1,4 +1,4 @@
-import * as request from "./request";
+import * as request from "./requestService";
 
 const baseUrl = 'http://localhost:3030/data/services'
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import * as serviceService from "../../api/serviceApi";
+import * as serviceService from "../../services/serviceService";
 import ServiceListItem from "./service-list-item/ServiceListItem";
 
 export default function ServiceList() {

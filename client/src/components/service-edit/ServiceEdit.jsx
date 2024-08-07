@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 
-import * as serviceApi from '../../api/serviceApi';
+import * as serviceService from '../../services/serviceService';
 import { useEffect, useState } from 'react';
 
 export default function ServiceEdit() {
@@ -15,7 +15,7 @@ export default function ServiceEdit() {
     });
 
     useEffect(() => {
-        serviceApi.getOne(serviceId)
+        serviceService.getOne(serviceId)
             .then(result => {
                 setService(result);
             });
@@ -27,7 +27,7 @@ export default function ServiceEdit() {
         const values = Object.fromEntries(new FormData(e.currentTarget));
 
         try {
-            await serviceApi.edit(serviceId, values);
+            await serviceService.edit(serviceId, values);
             navigate('/services');
         } catch (err) {
             console.log(err);

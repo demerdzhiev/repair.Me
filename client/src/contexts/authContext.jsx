@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import * as authService from '../api/authApi';
+import * as authService from '../services/authService';
 import usePersistedState from "../hooks/usePersistedState";
 import Path from '../paths';
 

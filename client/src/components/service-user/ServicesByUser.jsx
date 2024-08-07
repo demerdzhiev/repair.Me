@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import * as serviceApi from "../../api/serviceApi";
+import * as serviceService from "../../services/serviceService";
 import authContext from "../../contexts/authContext";
 import ServiceListItem from "../service-list/service-list-item/ServiceListItem";
 
@@ -10,7 +10,7 @@ export default function ServicesByOwner() {
   useEffect(() => {
     (async () => {
       try {
-        const result = await serviceApi.getAllByOwner(userId);
+        const result = await serviceService.getAllByOwner(userId);
         setMyServices(result);
       } catch (err) {
         console.log(err);

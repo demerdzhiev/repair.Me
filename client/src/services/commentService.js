@@ -1,4 +1,4 @@
-import * as request from '../api/request';
+import * as request from '../services/serviceService';
 
 const baseUrl = 'http://localhost:3030/data/comments';
 

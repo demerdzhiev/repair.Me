@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import LatestService from "./latest-service/LatestService";
-import * as serviceApi from "../../api/serviceApi";
+import * as serviceService from "../../services/serviceService";
 
 export default function Home() {
   const [latestServices, setLatestServices] = useState([]);
 
   useEffect(() => {
     (async () => {
-      const result = await serviceApi.getLatest();
+      const result = await serviceService.getLatest();
       setLatestServices(result);
     })();
   }, []);

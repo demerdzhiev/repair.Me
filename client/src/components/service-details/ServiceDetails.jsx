@@ -1,8 +1,8 @@
 import { useContext, useEffect, useReducer, useState, useMemo } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-import * as serviceApi from "../../api/serviceApi";
-import * as commentApi from "../../api/commentApi";
+import * as serviceService from "../../services/serviceService";
+import * as commentService from "../../services/commentService";
 import authContext from "../../contexts/authContext";
 import reducer from "./commentReducer";
 import useForm from "../../hooks/useForm";
@@ -17,9 +17,9 @@ export default function ServiceDetails() {
   const { serviceId } = useParams();
 
   useEffect(() => {
-    serviceApi.getOne(serviceId).then(setService);
+    serviceService.getOne(serviceId).then(setService);
 
-    commentApi.getAll(serviceId).then((result) => {
+    commentService.getAll(serviceId).then((result) => {
       dispatch({
         type: "GET_ALL_COMMENTS",
         payload: result,
@@ -28,7 +28,7 @@ export default function ServiceDetails() {
   }, [serviceId]);
 
   const addCommentHandler = async (values) => {
-    const newComment = await commentApi.create(serviceId, values.comment);
+    const newComment = await commentService.create(serviceId, values.comment);
 
     newComment.owner = { username };
 
@@ -44,7 +44,7 @@ export default function ServiceDetails() {
     );
 
     if (hasConfirmed) {
-      await serviceApi.remove(serviceId);
+      await serviceService.remove(serviceId);
 
       navigate(Path.Services);
     }
