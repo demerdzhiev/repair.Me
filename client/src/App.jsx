@@ -9,7 +9,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
-import ErrorBoundary from './components/ErrorBoundary';
+import ErrorBoundary from './components/common/ErrorBoundary';
 import Login from './components/login/Login';
 import ServiceList from './components/service-list/ServiceList';
 import ServiceCreate from './components/service-create/ServiceCreate';
